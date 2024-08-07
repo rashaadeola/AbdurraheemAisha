@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        .container{
+            display: block;
+            position:relative ;
+            width: 100%;
+            height: 100%; 
+        }
+            .background{
+            box-sizing: border-box;
+            width: 100%;
+           
+            position: fixed;
+            }
+        
+        .backgroundpic{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            filter: grayscale(100%) opacity(50%);
+           opacity: 0.59;
+           padding: 0 0;
+           z-index: 10;
+           
+        }
+        .text-container{
+            position: absolute;
+            top: 47%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: rgb(75, 62, 62);
+        }
+        .Text1{
+            font-size: 28px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 100;
+            color: rgb(75, 62, 62);
+            text-decoration: none;
+            z-index: 10;
+            white-space: nowrap; 
+            margin-bottom: 10px; 
+        }
+        .text2{
+            font-size:18px;
+            font-family:Times New Roman;
+            font-weight: 20;
+            color: rgb(77, 55, 55, 0.9);
+            padding: 0 20px;
+          z-index: 10;
+        }
+        .navbar{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            z-index: 10;
+            background: transparent;
+            display: flex;
+            justify-content: flex-end; 
+        }
+        .top-nav{
+         background-color: transparent;
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         font-family:'Times New Roman';
+         display: block;
+        
+         
+        }
+        .nav-links{
+            font-size: 12px;
+            font-family: Times New Roman;
+            padding: 15px 10px;
+            padding-bottom: 20px;
+            display:flex;
+            margin-left:100px ;
+            margin-right:0;
+            list-style: none;
+            justify-content: space-between;
+            color: rgb(77, 66, 66, 0.9); 
+            align-items: center;
+        
+        }
+        .nav-links li {
+        position: relative;
+        padding: 0 10px;
+        cursor: pointer;
+       }
+    .nav-links li:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 40%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 80%;
+    background-color: rgb(77, 66, 66, 0.9);
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: rgb(241, 241, 241);
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    list-style: none;
+}
+.dropdown li {
+    padding: 8px 12px;
+    color: black;
+    text-align: left;
+}
+.dropdown li:hover {
+    background-color: #ebebeb;
+}
+
+.nav-links li:hover .dropdown {
+    display: block;
+}
+.top-left-text {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    z-index: 1000;
+    color: rgb(85, 77, 77);
+}
+.top-left-text .main-text {
+    font-size: 20px;
+    font-weight: bold;
+}
+.top-left-text .sub-text {
+    font-size: 12px;
+    font-weight: normal;
+    color: rgba(112, 98, 98, 0.6); 
+}
+        .profile-pic{
+            width: 90%;
+            max-width: 450px;
+            background: white;
+            color: rgb(225, 240, 235);
+            box-shadow: 0 0 0 0px;
+            transition: box-shadow 0.5s;
+        }
+            .profile-pic:hover{
+                box-shadow: 0 0 0 5px;
+
+        }
+        .profile{
+            width: 140px;
+            border-radius: 50%;
+            text-align: center;
+            margin-top: -70px;
+            z-index: 10;
+            position: absolute;
+            top: 43%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 0 2px;
+        }
+    </style>
+    <div class="container">
+        <div class="background"></div>
+        <div class="top-left-text">
+            <div class="main-text">Abdurraheem, Aisha</div>
+            <div class="sub-text">Intern at Codeware Nig. Ltd</div>
+        </div>
+        <img src="../IMAGES/backgroundpic.jpg" class="backgroundpic">
+        <div class="text-container">
+        <div class="Text1">ABDURRAHEEM .A. AISHA</div>
+        <div class="Text2">I am a student of university of ilorin studying computer science.<br> This summer, i am interning at codeware limited.ng as a web developer.</div>
+        </div>  
+        <nav class="navbar">
+            <div class="top-nav"></div>
+            <ul class="nav-links">
+                <li>ABOUT
+                    <ul class="dropdown">
+                        <li>Profile</li>
+                        <li>History</li>
+                    </ul>      
+                </li>
+                <li>SKILLS
+                    <ul class="dropdown">
+                        <li>Web Development</li>
+                        <li>Programming</li>
+                    </ul>    
+                </li>
+                <li>EDUCATION
+                    <ul class="dropdown">
+                    <li>Bsc.Computer Science.University of Ilorin</li>
+                </li>
+                </ul>
+                <li>BLOG</li>
+                <li>CONTACT
+                    <ul class="dropdown">
+                    <li>Email<br> rashaadeola@gmail.com</li>
+                    <li>Social Media</li>
+                </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="profile-pic">
+            <img src="../IMAGES/profilepic.jpg" class="profile">
+        </div>   
+</div>
+</body>
+</html>
