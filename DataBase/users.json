@@ -1,0 +1,15 @@
+[
+    {
+        "id": 1,
+        "email": "rashaadeola@gmail.com",
+        "password": "rasha"
+    },{
+        "id": 2,
+        "email":"busariroqeeb@gmail.com",
+        "password":"aisha"
+    },{
+        "id": 3,
+        "email":"aishaadeola@gmail.com",
+        "password":"adeola"
+    }
+]
