@@ -3,10 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-size: cover;
+    background-image: url(../IMAGES/360_F_440137850_sBJOKpItVGgxB2XgCY4pxJECaU3QTEXC.jpg);
+}
 .background{
-    background-color: white;
-    width: 100%;
-    height: 100vh;
+    /* background-color: #c4e8f8;; */
+    background: linear-gradient(90deg, #c4e8f8 0, #c4e8f8 50%,  transparent 100%);
+    width: 800px;
+    height: 70vh;
+    /* border: solid 1px; */
+    margin: 60px auto;
 }
 .title{
     background-color: white (233, 35, 35);
@@ -24,33 +31,40 @@
     font-size: 26px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 300;
-    /* margin-top: 20px; */
+    /* background-color: #012d5a; */
+    margin-right: 500px;
+    /* color: white; */
 }
 input{
+    /* background-color: blue;  */
     width: 500px;
     height:20px;
     border-color: none;
-    margin-left:100px;
-    padding:20px;
-    outline: navy;
+    /* margin-left:100px; */
+    /* outline: navy; */
+    padding:20px 10px;
     /* justify-content: space-between; */
 }
 form > p{
     margin-top:10px;
-    margin-left:100px;
-    font-family: Arial, Helvetica, sans-serif;
+    width: 70px;
+    /* margin-left:5px; */
     font-size: 13px;
     font-weight: bold;
-    color: rgb(95, 93, 93);
-
-
+    /* background-color: green; */
+    color:#012d5a ;
+    
+    
 }
 form{
-    background-color: white (201, 36, 36);
-    /* height: 400px; */
-    width:800px;
-    margin-left: 300px;
-    padding:10px 5px ;
+    /* background-color: white (201, 36, 36); */
+    height: 300px;
+    /* background-color: #012d5a; */
+    width:600px;
+    /* margin-top: 30px; */
+    margin-left: 80px;
+    padding:30px 45px;
+    /* gap: 20px; */
 }
 input[type=checkbox]{
     width: 30px;
@@ -78,18 +92,20 @@ color: rgb(61, 60, 60);
 }
 
 button{
-    width: 500px;
+    width: 200px;
     height: 40px;
-    margin-left:406px;
+    margin-left:150px;
     padding:0 15px;
-    margin-top: 20px;
+    margin-top: 80px;
     justify-content: center;
     cursor: pointer;
-    background-color: rgb(32, 116, 81);
-    border-color: none;
     border: none;
-    color: white;
-    font-size: 15px;
+    /* background-color: rgb(32, 116, 81); */
+    background-color: white;
+    border-radius: 12px;
+    color: #012d5a;
+    font-size: 18px;
+    font-weight: bold;
 }
 /* #test{
     color: rgb(61, 60, 60); */
